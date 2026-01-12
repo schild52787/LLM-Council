@@ -120,8 +120,7 @@ export default function ChatInterface({
         <div ref={messagesEndRef} />
       </div>
 
-      {conversation.messages.length === 0 && (
-        <form className="input-form" onSubmit={handleSubmit}>
+      <form className="input-form" onSubmit={handleSubmit}>
           <textarea
             className="message-input"
             placeholder="Ask your question... (Shift+Enter for new line, Enter to send)"
@@ -139,7 +138,6 @@ export default function ChatInterface({
             Send
           </button>
         </form>
-      )}
     </div>
   );
 }
